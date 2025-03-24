@@ -72,12 +72,15 @@ main {
         height: auto;
       }
 
-
-      .swiper-wrapper{
-        position: absolute;
-      
-      .overlay {
+      .swiper-slide{
+        width: 100%;
+        height: 100%;
+      }
+      .swiper{
         position: relative;
+      
+      #overlay {
+        position: absolute;
         bottom: 5px;
         left:0;
         right: 0;
