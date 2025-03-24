@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" width="63" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+		<a href="tel:+9161234567">916-123-4567</a>
+        <button id="theButton"></button>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <ul id="theNav">
+            <li><a href="#">Clients</a></li>
+            <li class="parent"><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Lawn Maintenance</a></li>
+                <li><a href="#">Landscape Installation</a></li>
+                <li><a href="#">Seasonal Cleanup</a></li>
+            </ul>
+            </li>
+            <li class="active"><a href="#">Best Practices</a></li>
+            <li class="parent"><a href="#">Our Team</a>
+            <ul>
+                <li><a href="#">Dorian Kessler</a></li>
+                <li><a href="#">Marceline Voss</a></li>
+                <li><a href="#">Ezra Calloway</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <h1>Best Practices</h1>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+
+    <div class="swiper-wrapper">
+        <div id="overlay">
+            <h3>Orem Landscaping</h3>
+            <p>Schedule an Appointment today!</p>
+        </div>    
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/lawn-01 small.jpg" media="(max-width: 400px)">
+            <source srcset="images/lawn-01 medium.jpg" media="(max-width: 800px)">
+            <img src="images/lawn-01 large.jpg" alt= "sliderA" width="16" height="5">
+        </picture><!--slide one-->
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/lawn-02 small.jpg" media="(max-width: 400px)">
+            <source srcset="images/lawn-02 medium.jpg" media="(max-width: 800px)">
+            <img src="images/lawn-02 large.jpg" alt= "sliderB" width="16" height="5">
+        </picture><!--slidetwo-->
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/lawn-03 small.jpg" media="(max-width: 400px)">
+            <source srcset="images/lawn-03 medium.jpg" media="(max-width: 800px)">
+            <img src="images/lawn-03 large.jpg" alt= "sliderC" width="16" height="5">
+        </picture><!--slide three-->
+      </div>
+    </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script> 
+</body>
+</html> 
