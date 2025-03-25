@@ -4,3 +4,59 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+
+
+
+
+//main
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 4px;
+    padding: 10px;
+    section{
+    display: flex;    
+          // Center the container
+    margin: 0 auto;
+    justify-content: center; // Ensures grid items align properly
+    gap: 20px;
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }//end section
+}//end parent
+
+div.mask {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+    width: 1000px;
+    height: auto;
+    align-items: center;
+      // Center the container
+      margin: 0 auto;
+      justify-content: center; // Ensures grid items align properly
+    section {
+        position: relative;
+        border: 1px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: green;
+        h2{padding-left: 1rem;}
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        img:last-child {
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+}

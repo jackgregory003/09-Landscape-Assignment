@@ -17,6 +17,7 @@ body {
     font-family: $defaultFont;
     font-weight: $lightWeight;
     min-width: 320px;
+    //background-color: #aaa;
 }
 
 
@@ -84,44 +85,71 @@ main {
         bottom: 5px;
         left:0;
         right: 0;
+        z-index: 10;
         color: white;
         background: rgb(39, 4, 4);
         background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.35416666666666663) 30%);
         padding: 10px;
         h3{text-shadow: 0 0 2px #000;  padding-left: 10px;}
-        p{text-shadow: 0 0 2px #000;}
+        p{text-shadow: 0 0 2px #000;
+        color: white;}
       }
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }// end main
 
+h1{
+    padding: 1rem $gutter.5rem $gutter;
+    font-size: 1.5rem;
+    font-weight: $lightWeight;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section{
+        padding: 7px;
+        img{
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+    }//end section
+}//end parent
+
+
+div.mask {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 2rem;
+    section {
+        position: relative;
+        border: 1px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: green;
+        h2{
+            padding: 1rem $gutter.5rem $gutter;
+            font-size: 1.5rem;
+            font-weight: $lightWeight
+        }
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        img:last-child {
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+}
 
 
 /* --------------------------- FOOTER --------------------------- */

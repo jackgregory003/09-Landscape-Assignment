@@ -369,6 +369,7 @@ main .swiper #overlay {
   bottom: 5px;
   left: 0;
   right: 0;
+  z-index: 10;
   color: white;
   background: rgb(39, 4, 4);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.3541666667) 30%);
@@ -380,6 +381,59 @@ main .swiper #overlay h3 {
 }
 main .swiper #overlay p {
   text-shadow: 0 0 2px #000;
+  color: white;
+}
+
+h1 {
+  padding: 1rem 10px 0.5rem 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reviews section {
+  padding: 7px;
+}
+.reviews section img {
+  width: 100%;
+  height: auto;
+  clip-path: circle(50% at 50% 50%);
+  transition: transform 1s;
+}
+.reviews section img:hover {
+  transform: rotate(15deg);
+}
+
+div.mask {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 2rem;
+}
+div.mask section {
+  position: relative;
+  border: 1px solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: green;
+}
+div.mask section h2 {
+  padding: 1rem 10px 0.5rem 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+div.mask section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+div.mask section img:last-child {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -442,6 +496,17 @@ footer a {
   }
   #theNav li:hover ul {
     left: auto;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    padding: 10px;
+  }
+  .reviews section img {
+    width: 50%;
+    height: auto;
+    margin-left: 5rem;
   }
 }
 @media only screen and (max-width: 35rem) {
@@ -508,4 +573,52 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 4px;
+    padding: 10px;
+  }
+  .reviews section {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+  }
+  .reviews section img {
+    width: 150px;
+    height: auto;
+  }
+  div.mask {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+    width: 1000px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  div.mask section {
+    position: relative;
+    border: 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: green;
+  }
+  div.mask section h2 {
+    padding-left: 1rem;
+  }
+  div.mask section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  div.mask section img:last-child {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+  }
 }

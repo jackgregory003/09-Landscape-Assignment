@@ -48,22 +48,22 @@
         left: auto;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4px;
+    padding: 10px;
+    section{
+        img{
+            width: 50%;
+            height: auto;
+            margin-left: 5rem;
+
+        }
+        p{
+
+        }
+    }//end section
+}//end parent
