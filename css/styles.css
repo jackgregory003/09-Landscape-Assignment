@@ -335,7 +335,7 @@ header {
 header a {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #0378A6;
   align-items: center;
   padding-left: 2rem;
 }
@@ -345,7 +345,7 @@ header a {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #0E7C6A;
   font-weight: 300;
 }
 main p {
@@ -363,6 +363,7 @@ main .swiper-slide {
 }
 main .swiper {
   position: relative;
+  z-index: -10;
 }
 main .swiper #overlay {
   position: absolute;
@@ -418,7 +419,7 @@ div.mask section {
   border: 1px solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: green;
+  background-color: #0E7C6A;
 }
 div.mask section h2 {
   padding: 1rem 10px 0.5rem 10px;
@@ -438,7 +439,7 @@ div.mask section img:last-child {
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #0378A6;
 }
 
 footer {
@@ -482,10 +483,10 @@ footer a {
     color: rbga(255, 255, 255, 0.5);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #0E7C6A;
   }
   #theNav li ul {
-    background-color: #1d295f;
+    background-color: #0378A6;
     list-style-type: none;
     padding: 0;
     position: absolute;
@@ -507,6 +508,34 @@ footer a {
     width: 50%;
     height: auto;
     margin-left: 5rem;
+  }
+  div.mask {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  div.mask section {
+    position: relative;
+    border: 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  div.mask section h2 {
+    padding-left: 1rem;
+  }
+  div.mask section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  div.mask section img:last-child {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
   }
 }
 @media only screen and (max-width: 35rem) {
@@ -533,6 +562,7 @@ footer a {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    z-index: 20;
   }
   #theNav li a {
     display: block;
@@ -543,7 +573,7 @@ footer a {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #0E7C6A;
   }
   #theNav li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -560,7 +590,7 @@ footer a {
   #theNav .parent ul {
     list-style-type: none;
     padding: 0;
-    background-color: #1d295f;
+    background-color: #0378A6;
     display: none;
   }
   #theNav .parent:hover ul {
@@ -568,7 +598,7 @@ footer a {
   }
 }
 @media only screen and (min-width: 64rem) {
-  header, nav, main {
+  header, nav, main, .reviews, h1 {
     max-width: 960px;
     margin: auto;
   }

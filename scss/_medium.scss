@@ -62,8 +62,35 @@
             margin-left: 5rem;
 
         }
-        p{
-
-        }
     }//end section
 }//end parent
+
+div.mask {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding: 2rem;
+
+    align-items: center;
+      // Center the container
+      margin: 0 auto;
+      justify-content: center; // Ensures grid items align properly
+    section {
+        position: relative;
+        border: 1px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h2{padding-left: 1rem;}
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        img:last-child {
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+}
