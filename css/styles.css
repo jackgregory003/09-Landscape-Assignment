@@ -562,7 +562,6 @@ footer a {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    z-index: 20;
   }
   #theNav li a {
     display: block;
